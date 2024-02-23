@@ -4,4 +4,5 @@ import { GamePlayerViewModel } from "./game-player-view.model";
 export interface GameViewModel {
     card:Array<GameCardViewModel>
     player:Array<GamePlayerViewModel>
+    id:number
 }

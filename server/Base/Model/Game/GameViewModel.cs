@@ -10,6 +10,7 @@ namespace Base.Model.Game
 {
     public class GameViewModel
     {
+        public int Id { get; set; }
         public IList<GameCardViewModel> Card { get; set; }
         public IList<GamePlayerViewModel> Player { get; set; }
     }

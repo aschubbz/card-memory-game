@@ -46,7 +46,7 @@ namespace server.Migrations
                         {
                             Id = 1,
                             CardCategory = 1,
-                            CardType = 13,
+                            CardType = 14,
                             Image = "AC.png",
                             Name = "CLUBS A"
                         },
@@ -70,7 +70,7 @@ namespace server.Migrations
                         {
                             Id = 4,
                             CardCategory = 1,
-                            CardType = 3,
+                            CardType = 4,
                             Image = "4C.png",
                             Name = "CLUBS 4"
                         },
@@ -78,7 +78,7 @@ namespace server.Migrations
                         {
                             Id = 5,
                             CardCategory = 1,
-                            CardType = 4,
+                            CardType = 5,
                             Image = "5C.png",
                             Name = "CLUBS 5"
                         },
@@ -86,7 +86,7 @@ namespace server.Migrations
                         {
                             Id = 6,
                             CardCategory = 1,
-                            CardType = 5,
+                            CardType = 6,
                             Image = "6C.png",
                             Name = "CLUBS 6"
                         },
@@ -94,7 +94,7 @@ namespace server.Migrations
                         {
                             Id = 7,
                             CardCategory = 1,
-                            CardType = 6,
+                            CardType = 7,
                             Image = "7C.png",
                             Name = "CLUBS 7"
                         },
@@ -102,7 +102,7 @@ namespace server.Migrations
                         {
                             Id = 8,
                             CardCategory = 1,
-                            CardType = 7,
+                            CardType = 8,
                             Image = "8C.png",
                             Name = "CLUBS 8"
                         },
@@ -110,7 +110,7 @@ namespace server.Migrations
                         {
                             Id = 9,
                             CardCategory = 1,
-                            CardType = 8,
+                            CardType = 9,
                             Image = "9C.png",
                             Name = "CLUBS 9"
                         },
@@ -118,7 +118,7 @@ namespace server.Migrations
                         {
                             Id = 10,
                             CardCategory = 1,
-                            CardType = 9,
+                            CardType = 10,
                             Image = "10C.png",
                             Name = "CLUBS 10"
                         },
@@ -126,7 +126,7 @@ namespace server.Migrations
                         {
                             Id = 11,
                             CardCategory = 1,
-                            CardType = 10,
+                            CardType = 11,
                             Image = "JC.png",
                             Name = "CLUBS J"
                         },
@@ -134,7 +134,7 @@ namespace server.Migrations
                         {
                             Id = 12,
                             CardCategory = 1,
-                            CardType = 12,
+                            CardType = 13,
                             Image = "QC.png",
                             Name = "CLUBS Q"
                         },
@@ -142,7 +142,7 @@ namespace server.Migrations
                         {
                             Id = 13,
                             CardCategory = 1,
-                            CardType = 11,
+                            CardType = 12,
                             Image = "KC.png",
                             Name = "CLUBS K"
                         },
@@ -150,7 +150,7 @@ namespace server.Migrations
                         {
                             Id = 14,
                             CardCategory = 2,
-                            CardType = 13,
+                            CardType = 14,
                             Image = "AD.png",
                             Name = "DIAMONDS A"
                         },
@@ -174,7 +174,7 @@ namespace server.Migrations
                         {
                             Id = 17,
                             CardCategory = 2,
-                            CardType = 3,
+                            CardType = 4,
                             Image = "4D.png",
                             Name = "DIAMONDS 4"
                         },
@@ -182,7 +182,7 @@ namespace server.Migrations
                         {
                             Id = 18,
                             CardCategory = 2,
-                            CardType = 4,
+                            CardType = 5,
                             Image = "5D.png",
                             Name = "DIAMONDS 5"
                         },
@@ -190,7 +190,7 @@ namespace server.Migrations
                         {
                             Id = 19,
                             CardCategory = 2,
-                            CardType = 5,
+                            CardType = 6,
                             Image = "6D.png",
                             Name = "DIAMONDS 6"
                         },
@@ -198,7 +198,7 @@ namespace server.Migrations
                         {
                             Id = 20,
                             CardCategory = 2,
-                            CardType = 6,
+                            CardType = 7,
                             Image = "7D.png",
                             Name = "DIAMONDS 7"
                         },
@@ -206,7 +206,7 @@ namespace server.Migrations
                         {
                             Id = 21,
                             CardCategory = 2,
-                            CardType = 7,
+                            CardType = 8,
                             Image = "8D.png",
                             Name = "DIAMONDS 8"
                         },
@@ -214,7 +214,7 @@ namespace server.Migrations
                         {
                             Id = 22,
                             CardCategory = 2,
-                            CardType = 8,
+                            CardType = 9,
                             Image = "9D.png",
                             Name = "DIAMONDS 9"
                         },
@@ -222,7 +222,7 @@ namespace server.Migrations
                         {
                             Id = 23,
                             CardCategory = 2,
-                            CardType = 8,
+                            CardType = 10,
                             Image = "10D.png",
                             Name = "DIAMONDS 10"
                         },
@@ -230,7 +230,7 @@ namespace server.Migrations
                         {
                             Id = 24,
                             CardCategory = 2,
-                            CardType = 10,
+                            CardType = 11,
                             Image = "JD.png",
                             Name = "DIAMONDS J"
                         },
@@ -238,7 +238,7 @@ namespace server.Migrations
                         {
                             Id = 25,
                             CardCategory = 2,
-                            CardType = 11,
+                            CardType = 13,
                             Image = "QD.png",
                             Name = "DIAMONDS Q"
                         },
@@ -254,7 +254,7 @@ namespace server.Migrations
                         {
                             Id = 27,
                             CardCategory = 3,
-                            CardType = 13,
+                            CardType = 14,
                             Image = "AH.png",
                             Name = "HEARTS A"
                         },
@@ -278,7 +278,7 @@ namespace server.Migrations
                         {
                             Id = 30,
                             CardCategory = 3,
-                            CardType = 3,
+                            CardType = 4,
                             Image = "4H.png",
                             Name = "HEARTS 4"
                         },
@@ -286,7 +286,7 @@ namespace server.Migrations
                         {
                             Id = 31,
                             CardCategory = 3,
-                            CardType = 4,
+                            CardType = 5,
                             Image = "5H.png",
                             Name = "HEARTS 5"
                         },
@@ -294,7 +294,7 @@ namespace server.Migrations
                         {
                             Id = 32,
                             CardCategory = 3,
-                            CardType = 5,
+                            CardType = 6,
                             Image = "6H.png",
                             Name = "HEARTS 6"
                         },
@@ -302,7 +302,7 @@ namespace server.Migrations
                         {
                             Id = 33,
                             CardCategory = 3,
-                            CardType = 6,
+                            CardType = 7,
                             Image = "7H.png",
                             Name = "HEARTS 7"
                         },
@@ -310,7 +310,7 @@ namespace server.Migrations
                         {
                             Id = 34,
                             CardCategory = 3,
-                            CardType = 7,
+                            CardType = 8,
                             Image = "8H.png",
                             Name = "HEARTS 8"
                         },
@@ -318,7 +318,7 @@ namespace server.Migrations
                         {
                             Id = 35,
                             CardCategory = 3,
-                            CardType = 8,
+                            CardType = 9,
                             Image = "9H.png",
                             Name = "HEARTS 9"
                         },
@@ -326,7 +326,7 @@ namespace server.Migrations
                         {
                             Id = 36,
                             CardCategory = 3,
-                            CardType = 9,
+                            CardType = 10,
                             Image = "10H.png",
                             Name = "HEARTS 10"
                         },
@@ -334,7 +334,7 @@ namespace server.Migrations
                         {
                             Id = 37,
                             CardCategory = 3,
-                            CardType = 10,
+                            CardType = 11,
                             Image = "JH.png",
                             Name = "HEARTS J"
                         },
@@ -342,7 +342,7 @@ namespace server.Migrations
                         {
                             Id = 38,
                             CardCategory = 3,
-                            CardType = 12,
+                            CardType = 13,
                             Image = "QH.png",
                             Name = "HEARTS Q"
                         },
@@ -350,7 +350,7 @@ namespace server.Migrations
                         {
                             Id = 39,
                             CardCategory = 3,
-                            CardType = 11,
+                            CardType = 12,
                             Image = "KH.png",
                             Name = "HEARTS K"
                         },
@@ -358,7 +358,7 @@ namespace server.Migrations
                         {
                             Id = 40,
                             CardCategory = 4,
-                            CardType = 13,
+                            CardType = 14,
                             Image = "AS.png",
                             Name = "SPADES A"
                         },
@@ -382,7 +382,7 @@ namespace server.Migrations
                         {
                             Id = 43,
                             CardCategory = 4,
-                            CardType = 3,
+                            CardType = 4,
                             Image = "4S.png",
                             Name = "SPADES 4"
                         },
@@ -390,7 +390,7 @@ namespace server.Migrations
                         {
                             Id = 44,
                             CardCategory = 4,
-                            CardType = 4,
+                            CardType = 5,
                             Image = "5S.png",
                             Name = "SPADES 5"
                         },
@@ -398,7 +398,7 @@ namespace server.Migrations
                         {
                             Id = 45,
                             CardCategory = 4,
-                            CardType = 5,
+                            CardType = 6,
                             Image = "6S.png",
                             Name = "SPADES 6"
                         },
@@ -406,7 +406,7 @@ namespace server.Migrations
                         {
                             Id = 46,
                             CardCategory = 4,
-                            CardType = 6,
+                            CardType = 7,
                             Image = "7S.png",
                             Name = "SPADES 7"
                         },
@@ -414,7 +414,7 @@ namespace server.Migrations
                         {
                             Id = 47,
                             CardCategory = 4,
-                            CardType = 7,
+                            CardType = 8,
                             Image = "8S.png",
                             Name = "SPADES 8"
                         },
@@ -422,7 +422,7 @@ namespace server.Migrations
                         {
                             Id = 48,
                             CardCategory = 4,
-                            CardType = 8,
+                            CardType = 9,
                             Image = "9S.png",
                             Name = "SPADES 9"
                         },
@@ -430,7 +430,7 @@ namespace server.Migrations
                         {
                             Id = 49,
                             CardCategory = 4,
-                            CardType = 9,
+                            CardType = 10,
                             Image = "10S.png",
                             Name = "SPADES 10"
                         },
@@ -438,7 +438,7 @@ namespace server.Migrations
                         {
                             Id = 50,
                             CardCategory = 4,
-                            CardType = 10,
+                            CardType = 11,
                             Image = "JS.png",
                             Name = "SPADES J"
                         },
@@ -446,7 +446,7 @@ namespace server.Migrations
                         {
                             Id = 51,
                             CardCategory = 4,
-                            CardType = 12,
+                            CardType = 13,
                             Image = "QS.png",
                             Name = "SPADES Q"
                         },
@@ -454,7 +454,7 @@ namespace server.Migrations
                         {
                             Id = 52,
                             CardCategory = 4,
-                            CardType = 11,
+                            CardType = 12,
                             Image = "KS.png",
                             Name = "SPADES K"
                         });
@@ -495,7 +495,7 @@ namespace server.Migrations
                     b.Property<int>("GameId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<bool>("IsMatch")
+                    b.Property<int>("IsMatch")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("Order")

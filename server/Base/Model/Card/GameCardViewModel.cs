@@ -17,5 +17,7 @@ namespace Base.Model.Card
         public int Order { get; set; }
         public int IsMatch { get; set; }
         public string? Image { get; set;}
+        public string? ImageDefault { get; set; }
+        public int? CardType { get; set; }
     }
 }

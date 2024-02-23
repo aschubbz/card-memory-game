@@ -13,5 +13,6 @@ namespace DAL.Repository.Abstract
         Task<IEnumerable<GamePlayer>> Get();
         bool Update(GamePlayer gamePlayer);
         Task<GamePlayer> GetByGameAndPlayerId(int gameId, int playerId);
+        Task<IEnumerable<GamePlayer>> GetByGameId(int id);
     }
 }

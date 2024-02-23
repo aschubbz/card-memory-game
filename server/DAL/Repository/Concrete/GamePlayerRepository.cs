@@ -42,5 +42,10 @@ namespace DAL.Repository.Concrete
         {
             return await _context.gamePlayer.Where(o => o.PlayerId == playerId && o.GameId == gameId).SingleOrDefaultAsync();
         }
+
+        async public Task<IEnumerable<GamePlayer>> GetByGameId(int id)
+        {
+            return await _context.gamePlayer.Include(x => x.Player).Where(o => o.GameId == id).ToListAsync();
+        }
     }
 }

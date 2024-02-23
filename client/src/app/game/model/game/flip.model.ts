@@ -1,4 +1,4 @@
 export interface FlipModel {
-    gameCardId:number
+    gameCardIds:Array<number>
     playerId:number
 }

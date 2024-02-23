@@ -9,4 +9,6 @@ export interface GameCardViewModel
       order: number 
       isMatch: boolean 
       image:string
+      imageDefault:string
+      cardType:string
 }

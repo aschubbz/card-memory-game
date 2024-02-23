@@ -1,12 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
-$font-family_1: Raleway, sans-serif;
+// /* You can add global styles to this file, and also import other style files */
+// $font-family_1: Raleway, sans-serif;
 
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: $font-family_1;
-}
-// body {
-// 	background: linear-gradient(90deg, #C7C5F4, #776BCC);
+// * {
+// 	box-sizing: border-box;
+// 	margin: 0;
+// 	padding: 0;
+// 	font-family: $font-family_1;
 // }
+// // body {
+// // 	background: linear-gradient(90deg, #C7C5F4, #776BCC);
+// // }
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background:#0a3c2f
+}
+

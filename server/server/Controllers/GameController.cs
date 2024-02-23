@@ -64,10 +64,14 @@ namespace server.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("/game")]
-        async public Task<ActionResult>GetGame()
+        [Route("/game/{id}")]
+        async public Task<ActionResult>GetGame(int id)
         {
-            return Ok();
+            var result = await _gameService.getById(id);
+            if (result.success)
+                return Ok(result);
+
+            return BadRequest(result);
         }
 
         /// <summary>

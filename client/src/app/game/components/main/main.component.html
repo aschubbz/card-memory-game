@@ -1,23 +1,19 @@
-<div class="container">
+<div class="container_game">
+    <h2>Memory Game</h2>
     <div class="row">
-        <div class="col-9">
-            <div class="row">
-                <div class="col-sm" *ngFor="let card of cards">
-                    <app-card [_card]="card" [_playerId]="player_id" 
-                    (_playerChanged)="change_player($event)" 
-                    (_card_fliped)="change_player($event)"
-                    (change_player_score)="change_player_score($event)"></app-card>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div *ngFor="let p of players" style="margin-top: 5px;">
-                <h4>{{p.name}}</h4>
-                <p>Scored : {{p.score}}</p>
-                <h3 *ngIf="player_id==p.playerId" class="text-success">Play!</h3>
-            </div>
+        <div *ngFor="let p of players" style="text-align: center;" class="col-sm">
+            <h4>{{p.name}}</h4>
+            <p>Scored : {{p.score}}</p>
+            <h3 *ngIf="player_id==p.playerId" class="text-danger">Play!</h3>
         </div>
     </div>
-
-
+    <div class="game">
+        <div class="card" *ngFor="let card of cards">
+            <app-card [_card]="card" [_playerId]="player_id" 
+            (_card_flipped)="card_flipped($event)" 
+            (_card_fliped)="change_player($event)"
+            (change_player_score)="change_player_score($event)"></app-card>
+        </div>
+    </div>
+    <button class="reset" (click)="create_new_game()" >Reset Game</button>
 </div>

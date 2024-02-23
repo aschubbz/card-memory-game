@@ -62,7 +62,7 @@ namespace server.Migrations
                     FlippedPlayerId = table.Column<int>(type: "INTEGER", nullable: true),
                     FlippedOrder = table.Column<int>(type: "INTEGER", nullable: true),
                     Order = table.Column<int>(type: "INTEGER", nullable: false),
-                    IsMatch = table.Column<bool>(type: "INTEGER", nullable: false)
+                    IsMatch = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -116,7 +116,7 @@ namespace server.Migrations
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 1, 1, 13, "AC.png", "CLUBS A" });
+                values: new object[] { 1, 1, 14, "AC.png", "CLUBS A" });
 
             migrationBuilder.InsertData(
                 table: "cards",
@@ -131,57 +131,57 @@ namespace server.Migrations
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 4, 1, 3, "4C.png", "CLUBS 4" });
+                values: new object[] { 4, 1, 4, "4C.png", "CLUBS 4" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 5, 1, 4, "5C.png", "CLUBS 5" });
+                values: new object[] { 5, 1, 5, "5C.png", "CLUBS 5" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 6, 1, 5, "6C.png", "CLUBS 6" });
+                values: new object[] { 6, 1, 6, "6C.png", "CLUBS 6" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 7, 1, 6, "7C.png", "CLUBS 7" });
+                values: new object[] { 7, 1, 7, "7C.png", "CLUBS 7" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 8, 1, 7, "8C.png", "CLUBS 8" });
+                values: new object[] { 8, 1, 8, "8C.png", "CLUBS 8" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 9, 1, 8, "9C.png", "CLUBS 9" });
+                values: new object[] { 9, 1, 9, "9C.png", "CLUBS 9" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 10, 1, 9, "10C.png", "CLUBS 10" });
+                values: new object[] { 10, 1, 10, "10C.png", "CLUBS 10" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 11, 1, 10, "JC.png", "CLUBS J" });
+                values: new object[] { 11, 1, 11, "JC.png", "CLUBS J" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 12, 1, 12, "QC.png", "CLUBS Q" });
+                values: new object[] { 12, 1, 13, "QC.png", "CLUBS Q" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 13, 1, 11, "KC.png", "CLUBS K" });
+                values: new object[] { 13, 1, 12, "KC.png", "CLUBS K" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 14, 2, 13, "AD.png", "DIAMONDS A" });
+                values: new object[] { 14, 2, 14, "AD.png", "DIAMONDS A" });
 
             migrationBuilder.InsertData(
                 table: "cards",
@@ -196,47 +196,47 @@ namespace server.Migrations
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 17, 2, 3, "4D.png", "DIAMONDS 4" });
+                values: new object[] { 17, 2, 4, "4D.png", "DIAMONDS 4" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 18, 2, 4, "5D.png", "DIAMONDS 5" });
+                values: new object[] { 18, 2, 5, "5D.png", "DIAMONDS 5" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 19, 2, 5, "6D.png", "DIAMONDS 6" });
+                values: new object[] { 19, 2, 6, "6D.png", "DIAMONDS 6" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 20, 2, 6, "7D.png", "DIAMONDS 7" });
+                values: new object[] { 20, 2, 7, "7D.png", "DIAMONDS 7" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 21, 2, 7, "8D.png", "DIAMONDS 8" });
+                values: new object[] { 21, 2, 8, "8D.png", "DIAMONDS 8" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 22, 2, 8, "9D.png", "DIAMONDS 9" });
+                values: new object[] { 22, 2, 9, "9D.png", "DIAMONDS 9" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 23, 2, 8, "10D.png", "DIAMONDS 10" });
+                values: new object[] { 23, 2, 10, "10D.png", "DIAMONDS 10" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 24, 2, 10, "JD.png", "DIAMONDS J" });
+                values: new object[] { 24, 2, 11, "JD.png", "DIAMONDS J" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 25, 2, 11, "QD.png", "DIAMONDS Q" });
+                values: new object[] { 25, 2, 13, "QD.png", "DIAMONDS Q" });
 
             migrationBuilder.InsertData(
                 table: "cards",
@@ -246,7 +246,7 @@ namespace server.Migrations
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 27, 3, 13, "AH.png", "HEARTS A" });
+                values: new object[] { 27, 3, 14, "AH.png", "HEARTS A" });
 
             migrationBuilder.InsertData(
                 table: "cards",
@@ -261,57 +261,57 @@ namespace server.Migrations
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 30, 3, 3, "4H.png", "HEARTS 4" });
+                values: new object[] { 30, 3, 4, "4H.png", "HEARTS 4" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 31, 3, 4, "5H.png", "HEARTS 5" });
+                values: new object[] { 31, 3, 5, "5H.png", "HEARTS 5" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 32, 3, 5, "6H.png", "HEARTS 6" });
+                values: new object[] { 32, 3, 6, "6H.png", "HEARTS 6" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 33, 3, 6, "7H.png", "HEARTS 7" });
+                values: new object[] { 33, 3, 7, "7H.png", "HEARTS 7" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 34, 3, 7, "8H.png", "HEARTS 8" });
+                values: new object[] { 34, 3, 8, "8H.png", "HEARTS 8" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 35, 3, 8, "9H.png", "HEARTS 9" });
+                values: new object[] { 35, 3, 9, "9H.png", "HEARTS 9" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 36, 3, 9, "10H.png", "HEARTS 10" });
+                values: new object[] { 36, 3, 10, "10H.png", "HEARTS 10" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 37, 3, 10, "JH.png", "HEARTS J" });
+                values: new object[] { 37, 3, 11, "JH.png", "HEARTS J" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 38, 3, 12, "QH.png", "HEARTS Q" });
+                values: new object[] { 38, 3, 13, "QH.png", "HEARTS Q" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 39, 3, 11, "KH.png", "HEARTS K" });
+                values: new object[] { 39, 3, 12, "KH.png", "HEARTS K" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 40, 4, 13, "AS.png", "SPADES A" });
+                values: new object[] { 40, 4, 14, "AS.png", "SPADES A" });
 
             migrationBuilder.InsertData(
                 table: "cards",
@@ -326,52 +326,52 @@ namespace server.Migrations
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 43, 4, 3, "4S.png", "SPADES 4" });
+                values: new object[] { 43, 4, 4, "4S.png", "SPADES 4" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 44, 4, 4, "5S.png", "SPADES 5" });
+                values: new object[] { 44, 4, 5, "5S.png", "SPADES 5" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 45, 4, 5, "6S.png", "SPADES 6" });
+                values: new object[] { 45, 4, 6, "6S.png", "SPADES 6" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 46, 4, 6, "7S.png", "SPADES 7" });
+                values: new object[] { 46, 4, 7, "7S.png", "SPADES 7" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 47, 4, 7, "8S.png", "SPADES 8" });
+                values: new object[] { 47, 4, 8, "8S.png", "SPADES 8" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 48, 4, 8, "9S.png", "SPADES 9" });
+                values: new object[] { 48, 4, 9, "9S.png", "SPADES 9" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 49, 4, 9, "10S.png", "SPADES 10" });
+                values: new object[] { 49, 4, 10, "10S.png", "SPADES 10" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 50, 4, 10, "JS.png", "SPADES J" });
+                values: new object[] { 50, 4, 11, "JS.png", "SPADES J" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 51, 4, 12, "QS.png", "SPADES Q" });
+                values: new object[] { 51, 4, 13, "QS.png", "SPADES Q" });
 
             migrationBuilder.InsertData(
                 table: "cards",
                 columns: new[] { "Id", "CardCategory", "CardType", "Image", "Name" },
-                values: new object[] { 52, 4, 11, "KS.png", "SPADES K" });
+                values: new object[] { 52, 4, 12, "KS.png", "SPADES K" });
 
             migrationBuilder.InsertData(
                 table: "player",

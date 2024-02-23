@@ -41,9 +41,21 @@ namespace DAL.Repository.Concrete
             return result.Entity;
         }
 
+        public bool Update(IList<GameCard> gameCards)
+        {
+            _context.gameCard.UpdateRange(gameCards);
+            _context.SaveChanges();
+            return true;
+        }
+
         async public Task<IEnumerable<GameCard>> ByGame(int id)
         {
             return await _context.gameCard.Include(x => x.Card).Where(o => o.GameId == id).ToListAsync();
+        }
+
+        async public Task<IEnumerable<GameCard>> GetById(IList<int> ids)
+        {
+            return await _context.gameCard.Include(x => x.Card).Where(o => ids.Contains(o.Id)).ToListAsync();
         }
     }
 }

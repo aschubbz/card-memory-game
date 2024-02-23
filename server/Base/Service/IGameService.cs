@@ -13,5 +13,6 @@ namespace Base.Service
     {
         Task<ResponseWithDataModel<GameViewModel>> start();
         Task<CardFlipedResultModel> FlipCard(CardFlipModel model);
+        Task<ResponseWithDataModel<GameViewModel>> getById(int id);
     }
 }

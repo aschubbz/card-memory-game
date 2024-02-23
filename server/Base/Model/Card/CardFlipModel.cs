@@ -8,7 +8,7 @@ namespace Base.Model.Card
 {
     public class CardFlipModel
     {
-        public int gameCardId { get; set; }
+        public List<int> gameCardIds { get; set; }
         public int playerId { get; set; }
     }
 }

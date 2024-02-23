@@ -22,4 +22,8 @@ export class GameService {
     flip(callback: NextCallback<CardFlipedResultModel>, error: ErrorCallback<ErrorModel>, data:FlipModel) {
         this._.api().url('flip').noAuth().json(data).post(callback, error)
     }
+    
+    get_game(callback: NextCallback<ResponseModel<GameViewModel>>, error: ErrorCallback<ErrorModel>, game_id:number) {
+        this._.api().url(`game/${game_id}`).noAuth().get(callback, error)
+    }
 }

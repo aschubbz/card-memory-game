@@ -1,4 +1,62 @@
-.img {
-    transition: background-image 500ms;
-    width: 300px;
+.game {
+    width: 540px;
+    height: 440px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+
+.card {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    background: #fff;
+    transition: 0.25s;
+}
+
+.container_game {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	flex-direction: column;
+	gap: 30px;
+	background-color: #0d614b;
+	padding: 40px 60px;
+}
+
+h2 {
+    text-align: center;
+	font-size: 3em;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+h3,h4 {
+    text-align: center;
+	font-size: 1.3em;
+	color: #ffffffaa;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+p {
+	color: #ffffffaa;
+}
+
+.reset {
+	padding: 15px 20px;
+	color: #267c65;
+	background: #fff;
+	border: none;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
 }

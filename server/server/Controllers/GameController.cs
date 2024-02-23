@@ -16,7 +16,12 @@ namespace server.Controllers
             _gameService = gameService;
         }
 
+        /// <summary>
+        /// Create new game
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
+        [Route("/start")]
         async public Task<ActionResult> GetNewGame()
         {
             try
@@ -31,7 +36,14 @@ namespace server.Controllers
             }
         }
 
+        /// <summary>
+        /// Flip a card
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+
         [HttpPost]
+        [Route("/flip")]
         async public Task<ActionResult> FlipCard(CardFlipModel model )
         {
             try
@@ -45,6 +57,29 @@ namespace server.Controllers
 
                 return ISE(e);
             }
+        }
+
+        /// <summary>
+        /// Get last game
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("/game")]
+        async public Task<ActionResult>GetGame()
+        {
+            return Ok();
+        }
+
+        /// <summary>
+        /// End game
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("/end-game")]
+        async public Task<ActionResult> EndGame(int id)
+        {
+            return Ok();
         }
     }
 }

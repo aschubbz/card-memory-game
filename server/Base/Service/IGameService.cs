@@ -10,7 +10,7 @@ namespace Base.Service
 {
     public interface IGameService
     {
-        Task<ResponseWithDataModel<IList<CardViewModel>>>start();
+        Task<ResponseWithDataModel<IList<GameCardViewModel>>>start();
         Task<CardFlipedResultModel> FlipCard(CardFlipModel model);
     }
 }

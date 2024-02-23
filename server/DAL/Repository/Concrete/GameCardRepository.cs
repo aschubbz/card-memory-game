@@ -41,9 +41,9 @@ namespace DAL.Repository.Concrete
             return result.Entity;
         }
 
-        async public Task<GameCard> ByGame(int id)
+        async public Task<IEnumerable<GameCard>> ByGame(int id)
         {
-            return await _context.gameCard.Where(o => o.GameId == id).SingleOrDefaultAsync();
+            return await _context.gameCard.Include(x => x.Card).Where(o => o.GameId == id).ToListAsync();
         }
     }
 }

@@ -30,10 +30,10 @@ namespace Business.Service
             _gameRepository = gameRepository;
             _gameCardRepository = gameCardRepository;
         }
-        async public Task<ResponseWithDataModel<IList<CardViewModel>>>start()
+        async public Task<ResponseWithDataModel<IList<GameCardViewModel>>>start()
         {
             // get random 20 cards
-            var list = (await _cardRepository.GetRandomCards(20)).Select(o => new CardViewModel { CardType = o.CardType, Id=o.Id }).ToList();
+            var list = (await _cardRepository.GetRandomCards(20)).Select(o => new CardViewModel { Id=o.Id, Image= o.Image }).ToList();
 
             // get players
             var players = await _playerRepository.Get();
@@ -76,10 +76,11 @@ namespace Business.Service
 
             await _gamePlayerRepository.Create(game_payers);
             await _gameCardRepository.Create(game_cards);
+
+           var _cards = (await _gameCardRepository.ByGame(game.Id)).Select(c => new GameCardViewModel { Image = "purple_back.png", Id=c.Id}).ToList();
+
             
-
-
-            return new ResponseWithDataModel<IList<CardViewModel>>() { Data = list, success=true, Message= "New game has created" };
+            return new ResponseWithDataModel<IList<GameCardViewModel>>() { Data = _cards, success=true, Message= "New game has created" };
         }
 
         async public Task<CardFlipedResultModel> FlipCard(CardFlipModel model)

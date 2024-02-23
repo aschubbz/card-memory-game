@@ -33,5 +33,6 @@ app.UseStaticFiles(new StaticFileOptions
 app.UseAuthorization();
 
 app.MapControllers();
+app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().SetIsOriginAllowed((host)=>true).AllowCredentials());
 
 app.Run();

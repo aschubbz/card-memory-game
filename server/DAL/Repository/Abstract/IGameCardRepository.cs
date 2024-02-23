@@ -13,7 +13,7 @@ namespace DAL.Repository.Abstract
         Task<IEnumerable<GameCard>> Get();
         GameCard Update(GameCard gameCard);
         Task<GameCard> GetById(int id);
-        Task<GameCard> ByGame(int id);
+        Task<IEnumerable<GameCard>> ByGame(int id);
 
 
     }

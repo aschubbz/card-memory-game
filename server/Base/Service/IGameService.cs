@@ -1,5 +1,6 @@
 ﻿using Base.Model.Card;
 using Base.Model.Common;
+using Base.Model.Game;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace Base.Service
 {
     public interface IGameService
     {
-        Task<ResponseWithDataModel<IList<GameCardViewModel>>>start();
+        Task<ResponseWithDataModel<GameViewModel>> start();
         Task<CardFlipedResultModel> FlipCard(CardFlipModel model);
     }
 }

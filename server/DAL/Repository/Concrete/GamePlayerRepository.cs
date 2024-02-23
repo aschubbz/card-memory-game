@@ -30,5 +30,17 @@ namespace DAL.Repository.Concrete
         {
             return await _context.gamePlayer.ToListAsync();
         }
+
+
+        public bool Update(GamePlayer gamePlayer)
+        {
+            _context.gamePlayer.Update(gamePlayer);
+            return true;
+        }
+
+        async public Task<GamePlayer> GetByGameAndPlayerId(int gameId, int playerId)
+        {
+            return await _context.gamePlayer.Where(o => o.PlayerId == playerId && o.GameId == gameId).SingleOrDefaultAsync();
+        }
     }
 }

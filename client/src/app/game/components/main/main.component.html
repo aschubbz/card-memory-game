@@ -1,19 +1,21 @@
 <div class="container">
     <div class="row">
-        <div class="col-3">
-            <h4>Player 1</h4>
-            <p>Scored : 0</p>
-        </div>
-        <div class="col-6">
+        <div class="col-9">
             <div class="row">
                 <div class="col-sm" *ngFor="let card of cards">
-                    <app-card [_card]="card"></app-card>
+                    <app-card [_card]="card" [_playerId]="player_id" 
+                    (_playerChanged)="change_player($event)" 
+                    (_card_fliped)="change_player($event)"
+                    (change_player_score)="change_player_score($event)"></app-card>
                 </div>
             </div>
         </div>
         <div class="col-3">
-            <h4>Player 2</h4>
-            <p>Scored : 0</p>
+            <div *ngFor="let p of players" style="margin-top: 5px;">
+                <h4>{{p.name}}</h4>
+                <p>Scored : {{p.score}}</p>
+                <h3 *ngIf="player_id==p.playerId" class="text-success">Play!</h3>
+            </div>
         </div>
     </div>
 

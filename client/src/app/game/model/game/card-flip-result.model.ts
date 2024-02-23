@@ -7,5 +7,6 @@ export interface CardFlipedResultModel {
     success: boolean,
     message: string,
     isHaveAnotherChance: boolean
+    score:number
 
 }

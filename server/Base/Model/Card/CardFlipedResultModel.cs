@@ -14,5 +14,6 @@ namespace Base.Model.Card
         public bool Success { get; set; }
         public string? Message { get; set; }
         public bool IsHaveAnotherChance { get; set; }
+        public int Score { get; set; }
     }
 }

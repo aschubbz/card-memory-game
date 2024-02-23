@@ -11,5 +11,7 @@ namespace DAL.Repository.Abstract
     {
         Task<bool> Create(IList<GamePlayer> gamePlayer);
         Task<IEnumerable<GamePlayer>> Get();
+        bool Update(GamePlayer gamePlayer);
+        Task<GamePlayer> GetByGameAndPlayerId(int gameId, int playerId);
     }
 }

@@ -6,6 +6,7 @@ import { CardViewModel } from "../model/game/card-view.model";
 import { FlipModel } from "../model/game/flip.model";
 import { GameCardViewModel } from "../model/game/game-card-view.model";
 import { CardFlipedResultModel } from "../model/game/card-flip-result.model";
+import { GameViewModel } from "../model/game/game-view.model";
 
 @Injectable({
     providedIn: 'root'
@@ -14,7 +15,7 @@ import { CardFlipedResultModel } from "../model/game/card-flip-result.model";
 export class GameService {
     constructor(private _: ServiceHelper){}
 
-    start(callback: NextCallback<ResponseModel<Array<GameCardViewModel>>>, error: ErrorCallback<ErrorModel>) {
+    start(callback: NextCallback<ResponseModel<GameViewModel>>, error: ErrorCallback<ErrorModel>) {
         this._.api().url('start').noAuth().get(callback, error)
     }
 

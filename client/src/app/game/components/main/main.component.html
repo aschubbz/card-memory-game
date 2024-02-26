@@ -4,16 +4,17 @@
         <div *ngFor="let p of players" style="text-align: center;" class="col-sm">
             <h4>{{p.name}}</h4>
             <p>Scored : {{p.score}}</p>
-            <h3 *ngIf="player_id==p.playerId" class="text-danger">Play!</h3>
+            <h3 *ngIf="player_id==p.playerId && !is_game_over" class="text-danger">Play!</h3>
         </div>
     </div>
+    <h3 class="text-danger" *ngIf="is_game_over">Game Over!</h3>
     <div class="game">
-        <div class="card" *ngFor="let card of cards">
-            <app-card [_card]="card" [_playerId]="player_id" 
-            (_card_flipped)="card_flipped($event)" 
-            (_card_fliped)="change_player($event)"
-            (change_player_score)="change_player_score($event)"></app-card>
+        <div class="card" *ngFor="let card of cards" [ngClass]="{
+                'game_over__card_flipped_not_match': card.flipedState === flipped_state.GAMEOVER_NOT_MATCHED,
+                'game_over__card_flipped_match': card.flipedState === flipped_state.MATCHED
+            }">
+            <app-card [_card]="card" (_card_flipped)="card_flipped($event)"></app-card>
         </div>
     </div>
-    <button class="reset" (click)="create_new_game()" >Reset Game</button>
+    <button class="reset" (click)="create_new_game()">Reset Game</button>
 </div>

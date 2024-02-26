@@ -10,7 +10,7 @@ import { BrowserModule } from '@angular/platform-browser';
 @NgModule({
   declarations: [
     MainComponent,
-    CardComponent
+    CardComponent,
   ],
   imports: [
     CommonModule,

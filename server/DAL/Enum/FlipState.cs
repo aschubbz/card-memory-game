@@ -19,11 +19,12 @@ namespace DAL.Enum
             return @enum._value;
         }
 
-        private static FlipState? _FLIPED;
+        private static FlipState? _MATCHED;
         private static FlipState? _NOT_FLIPED;
     
-        public static FlipState FLIPED => _FLIPED ?? (_FLIPED = new FlipState(1));
+        public static FlipState MATCHED => _MATCHED ?? (_MATCHED = new FlipState(1));
         public static FlipState NOT_FLIPED => _NOT_FLIPED ?? (_NOT_FLIPED = new FlipState(2));
+
     }
 
 

@@ -24,15 +24,13 @@ namespace DAL.Repository.Concrete
             return game;
         }
 
-        async public Task<Game> Update(Game game)
+        public bool Update(Game game)
         {
-            throw new NotImplementedException();
+            _context.game.Update(game);
+            _context.SaveChanges();
+            return true;
         }
 
-        async public Task<Game> Delete(Game game)
-        {
-            throw new NotImplementedException();
-        }
 
         async public Task<Game> GetById(int id)
         {

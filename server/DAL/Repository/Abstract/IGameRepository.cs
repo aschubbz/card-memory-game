@@ -10,8 +10,7 @@ namespace DAL.Repository.Abstract
     public interface IGameRepository
     {
         Task<Game> Create(Game game);
-        Task<Game> Update(Game game);
-        Task<Game> Delete(Game game);
+        bool Update(Game game);
         Task<Game> GetById(int id);
     }
 }

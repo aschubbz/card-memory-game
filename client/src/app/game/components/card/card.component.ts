@@ -1,8 +1,5 @@
-import { Component, EventEmitter, Input, OnInit, Output, SimpleChange, SimpleChanges } from '@angular/core';
-import { CardViewModel } from '../../model/game/card-view.model';
-import { GameService } from '../../service/game.service';
+import { Component, EventEmitter, Input, OnInit, Output, SimpleChange } from '@angular/core';
 import { GameCardViewModel } from '../../model/game/game-card-view.model';
-import { CardFlipedResultModel } from '../../model/game/card-flip-result.model';
 
 @Component({
   selector: 'app-card',
@@ -12,12 +9,10 @@ import { CardFlipedResultModel } from '../../model/game/card-flip-result.model';
 export class CardComponent implements OnInit {
 
   @Input('_card') _card!: GameCardViewModel;
-  @Input('_playerId') _playerId!: number;
   @Output() _card_flipped = new EventEmitter<GameCardViewModel>();
-  // @Output() change_player_score = new EventEmitter<any>();
 
 
-  constructor(private _gameService: GameService) { }
+  constructor() { }
 
   ngOnInit() {
     this.setCardImage()
@@ -35,7 +30,6 @@ export class CardComponent implements OnInit {
 
   ngOnChanges(changes: SimpleChange) {
     // console.log(changes);
-    
   }
 
   setCardImage() {

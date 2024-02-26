@@ -67,11 +67,19 @@ namespace server.Controllers
         [Route("/game/{id}")]
         async public Task<ActionResult>GetGame(int id)
         {
-            var result = await _gameService.getById(id);
-            if (result.success)
-                return Ok(result);
+            try
+            {
+                var result = await _gameService.getById(id);
+                if (result.success)
+                    return Ok(result);
 
-            return BadRequest(result);
+                return BadRequest(result);
+            }
+            catch (Exception e)
+            {
+                return ISE(e);
+            }
+           
         }
 
         /// <summary>
@@ -80,10 +88,18 @@ namespace server.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet]
-        [Route("/end-game")]
+        [Route("/end-game/{id}")]
         async public Task<ActionResult> EndGame(int id)
         {
-            return Ok();
+            try
+            {
+                var reslut = await _gameService.End(id);
+                return Ok(reslut);
+            }
+            catch (Exception e)
+            {
+                return ISE(e);
+            }
         }
     }
 }
